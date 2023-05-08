@@ -26,8 +26,20 @@ public class Main {
         byte asStudents = 27;
         byte eaStudents = 30;
         short papers = 480;
-        int allStudents = lpStudents + asStudents + eaStudents;
-        int papersForStudent = papers / allStudents;
+        byte allStudents = (byte) (lpStudents + asStudents + eaStudents);
+        short papersForStudent = (short) (papers / allStudents);
         System.out.println("На каждого ученика рассчитано " + papersForStudent + " листов бумаги");
+        /* task4 */
+        byte machinePerformanceFor2min = 16;
+       byte machinePerformanceFor1min = (byte) (machinePerformanceFor2min / 2);
+        System.out.println(machinePerformanceFor1min);
+       short machinePerformanceFor20min = (short) (machinePerformanceFor1min * 20);
+       short machinePerformanceForDay = (short) (machinePerformanceFor1min * 60 * 24);
+       int machinePerformanceFor3Days = machinePerformanceForDay * 3;
+       int machinePerformanceForMonth = machinePerformanceForDay * 30;
+       System.out.println("За 20 минут машина произвела " + machinePerformanceFor20min + " штук бутылок");
+       System.out.println("За сутки машина произвела " + machinePerformanceForDay + " штук бутылок");
+       System.out.println("За 3 дня машина произвела " + machinePerformanceFor3Days + " штук бутылок");
+       System.out.println("За месяц машина произвела " + machinePerformanceForMonth + " штук бутылок");
     }
 }
