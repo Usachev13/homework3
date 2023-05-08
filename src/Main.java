@@ -21,5 +21,13 @@ public class Main {
         short fifthNumber = -159;
         short sixthNumber = 27897;
         byte seventhNumber = 67;
+        /* task3 */
+        byte lpStudents = 23;
+        byte asStudents = 27;
+        byte eaStudents = 30;
+        short papers = 480;
+        int allStudents = lpStudents + asStudents + eaStudents;
+        int papersForStudent = papers / allStudents;
+        System.out.println("На каждого ученика рассчитано " + papersForStudent + " листов бумаги");
     }
 }
