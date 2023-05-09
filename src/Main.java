@@ -77,6 +77,26 @@ public class Main {
         short averageWeightLoss = (short) ((deficitCalFirstVariant + deficitCalSecondVariant) / 2);
         short daysForAverageWeightLoss = (short) (needLostWeightGr / averageWeightLoss);
         System.out.println("Потребуется в среднем " + daysForAverageWeightLoss + " дней для похудения на " + needLostWeight + " кг");
+        /* task8 */
+        int salaryMasha = 67760;
+        int salaryDenis = 83690;
+        int salaryKristina = 76230;
+        int newSalaryMasha = salaryMasha + (salaryMasha / 100 * 10);
+        int newSalaryDenis = salaryDenis + (salaryDenis / 100 * 10);
+        int newSalaryKristina = salaryKristina + (salaryKristina / 100 * 10);
+        int salaryMashaForYear = salaryMasha * 12;
+        int newSalaryMashaForYear = newSalaryMasha * 12;
+        int salaryDenisForYear = salaryDenis * 12;
+        int newSalaryDenisForYear = newSalaryDenis * 12;
+        int salaryKristinaForYear = salaryKristina * 12;
+        int newSalaryKristinaForYear = newSalaryKristina * 12;
+        int differenceSalaryMasha = newSalaryMashaForYear - salaryMashaForYear;
+        int differenceSalaryDenis = newSalaryDenisForYear - salaryDenisForYear;
+        int differenceSalaryKristina = newSalaryKristinaForYear - salaryKristinaForYear;
+        System.out.println("Маша теперь получает " + newSalaryMasha + " рублей. Годовой доход вырос на " + differenceSalaryMasha + " рублей");
+        System.out.println("Денис теперь получает " + newSalaryDenis + " рублей. Годовой доход вырос на " + differenceSalaryDenis + " рублей");
+        System.out.println("Кристина теперь получает " + newSalaryKristina + " рублей. Годовой доход вырос на " + differenceSalaryKristina + " рублей");
+
 
     }
 }
