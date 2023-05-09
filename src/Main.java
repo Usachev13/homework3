@@ -65,6 +65,18 @@ public class Main {
         System.out.println("Вес такого спорзавтрака " + weightOfMilkshake + "грамм");
         float weightOfMilkShakeOnKg = weightOfMilkshake / 100;
         System.out.println("Вес такого спорзавтрака " + weightOfMilkShakeOnKg + " килограмм");
+        /* task7 */
+        byte needLostWeight = 7;
+        short needLostWeightGr = (short) (needLostWeight * 1000);
+        short deficitCalFirstVariant = 250;
+        short deficitCalSecondVariant = 500;
+        short daysForWeightLossFirstVariant = (short) (needLostWeightGr / deficitCalFirstVariant);
+        byte daysForWeightLossSecondVariant = (byte) (needLostWeightGr / deficitCalSecondVariant);
+        System.out.println("Потребуется " + daysForWeightLossFirstVariant + " дней для похудения на " + needLostWeight + " кг");
+        System.out.println("Потребуется " + daysForWeightLossSecondVariant + " дней для похудения на " + needLostWeight + " кг");
+        short averageWeightLoss = (short) ((deficitCalFirstVariant + deficitCalSecondVariant) / 2);
+        short daysForAverageWeightLoss = (short) (needLostWeightGr / averageWeightLoss);
+        System.out.println("Потребуется в среднем " + daysForAverageWeightLoss + " дней для похудения на " + needLostWeight + " кг");
 
     }
 }
