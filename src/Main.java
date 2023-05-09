@@ -1,3 +1,5 @@
+import java.util.SortedMap;
+
 public class Main {
     public static void main(String[] args) {
         /* task1 */
@@ -50,5 +52,19 @@ public class Main {
         byte amountWhitePaints = (byte) (amountClasses * whitePaintForOneClass);
         byte amountBrownPaints = (byte) (amountClasses * brownPaintForOneClass);
         System.out.println("В школе, где " + amountClasses + " классов, нужно " + amountWhitePaints + " банок белой краски и " + amountBrownPaints + " банок коричневой краски");
+        /* task6 */
+        byte bananas = 5;
+        byte weightOneBanana = 80;
+        byte milk = 2;
+        byte weight100MlMilk = 105;
+        byte iceCream = 2;
+        byte weightOneIceCream = 100;
+        byte eggs = 4;
+        byte weightOneEgg = 70;
+        float weightOfMilkshake = (float) (weightOneBanana * bananas + weight100MlMilk * milk + iceCream * weightOneIceCream + eggs * weightOneEgg);
+        System.out.println("Вес такого спорзавтрака " + weightOfMilkshake + "грамм");
+        float weightOfMilkShakeOnKg = weightOfMilkshake / 100;
+        System.out.println("Вес такого спорзавтрака " + weightOfMilkShakeOnKg + " килограмм");
+
     }
 }
